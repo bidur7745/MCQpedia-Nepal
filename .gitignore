@@ -1,0 +1,22 @@
+# Node modules
+**/node_modules/
+
+# Environment variables
+**/.env
+
+# Build output (just in case)
+frontend/dist/
+
+# Log files
+*.log
+
+# IDE/config folders
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore data feed folder completely
+/data feed/

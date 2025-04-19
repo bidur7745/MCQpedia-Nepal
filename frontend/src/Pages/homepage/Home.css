@@ -1,0 +1,68 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px ;
+  margin: auto;
+  animation: fadeIn 1s;
+
+}
+
+
+.text-content {
+  max-width: 600px;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2b2b2b; 
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.go-green {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #28a745; 
+  margin: 10px 0;
+}
+
+.leaf-icon {
+  color: #28a745;
+  margin: 0 5px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.get-started-button {
+  background: linear-gradient(356deg, #1a73e8, #0e254b);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.86, 1.41);;
+
+}
+
+.get-started-button:hover {
+  background: linear-gradient(135deg, #4285f4, #1a73e8);
+
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

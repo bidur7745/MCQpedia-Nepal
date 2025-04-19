@@ -1,0 +1,134 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it stays on top of other content */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;  /* Make sure modal is scrollable if content is long */
+    max-height: 90vh;  /* Ensure the modal doesn’t exceed the viewport height */
+    position: relative;
+    clip-path: inset(0 round 8px);
+  }
+  
+  /* Modal Header */
+  .modal-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Option input fields */
+  .optionsharu {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Modal Action Buttons */
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .modal-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 48%;
+  }
+  
+  .modal-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Cancel Button */
+  .modal-actions button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .modal-actions button:last-child:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .modal-actions button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-content {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .modal-actions button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

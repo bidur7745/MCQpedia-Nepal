@@ -1,0 +1,183 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 1s;
+}
+
+.navbar-logo p {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #007bff, #0ed65e, #7b61ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #f9f5f5;
+  color: #007bff;
+}
+
+.nav-link.active {
+  color: #007bff;
+  background-color: transparent;
+  border: 2px solid #007bff;
+}
+
+.navbar-auth {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.auth-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-button {
+  color: #007bff;
+  background-color: transparent;
+  border: 2px solid #007bff;
+}
+
+.login-button:hover {
+  background-color: #e7f0ff;
+}
+
+.signup-button {
+  color: #007bff;
+  background-color: transparent;
+  border: 2px solid #007bff;
+}
+
+.signup-button:hover {
+  background-color: #e7f0ff;
+}
+
+/* Profile Icon */
+.profile-icon {
+  text-decoration: none;
+}
+
+.profile-icon .avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #1877F2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-icon .avatar:hover {
+  transform: scale(1.05);
+}
+
+.profile-icon svg {
+  font-size: 1.2rem;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  height: 3px;
+  background-color: #333;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-logo p {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .navbar-auth {
+    gap: 10px;
+  }
+
+  .auth-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .profile-icon .avatar {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}

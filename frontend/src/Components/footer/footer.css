@@ -1,0 +1,109 @@
+/* Footer main styling */
+.footer {
+    background-color: #3d566f;
+    color: #f1f1f1;
+    padding: 25px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border:  1rem;
+    animation: fadeIn 1s;
+
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer Logo and tagline */
+  .footer-logo h2 {
+    color: #f1f1f1;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-logo .tagline {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-top: 5px;
+  }
+  
+  /* Footer Links */
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-links ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ffffff;
+  }
+  
+  /* Contact Information */
+  .footer-contact address {
+    color: #b0b0b0;
+    font-style: normal;
+    line-height: 1.6;
+  }
+  .footer-contact address a{
+    text-decoration: none;
+    color: #b0b0b0;
+  }
+  .footer-contact address a:hover{
+    text-decoration: underline;
+  }
+  /* Social Media Links */
+  .footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.7rem;
+  }
+  
+  .footer-social .social-icons a {
+    color: #b0b0b0;
+    transition: color 0.3s;
+  }
+  
+  .footer-social .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  /* Footer bottom line */
+  .footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+  
+  .footer-bottom a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-weight:lighter;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+    font-size:104%;
+  }

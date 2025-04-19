@@ -1,0 +1,258 @@
+.question-page {
+  display: flex;
+  min-height: calc(100vh - 64px - 200px);
+  margin-bottom: 1rem;
+  padding: 20px;
+  gap: 30px;
+  animation: fadeIn 1s;
+}
+
+.category-filter {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 84px;
+  height: fit-content;
+}
+
+.category-filter h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.category-filter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.category-filter li {
+  padding: 10px 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.category-filter li:hover {
+  background: #f0f0f0;
+}
+
+.category-filter li.active {
+  background: #007bff;
+  color: white;
+}
+
+.question-content {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.question-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation-buttons button {
+  padding: 8px 16px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navigation-buttons button:hover:not(:disabled) {
+  background: #e0e0e0;
+}
+
+.navigation-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.question h3 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.option:hover {
+  background: #f8f9fa;
+}
+
+.option input[type="radio"] {
+  margin-right: 15px;
+}
+
+.option label {
+  flex: 1;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.option label.correct {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.option label.incorrect {
+  color: #dc3545;
+  text-decoration: line-through;
+}
+
+.reveal-btn, .next-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reveal-btn:hover:not(:disabled),
+.next-btn:hover {
+  background: #0056b3;
+}
+
+.reveal-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.answer-feedback {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.answer {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.answer.correct {
+  background: #d4edda;
+  color: #155724;
+}
+
+.answer.incorrect {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.explanation {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.error-message {
+  text-align: center;
+  padding: 40px;
+  color: #721c24;
+  background: #f8d7da;
+  border-radius: 8px;
+}
+
+.error-message button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-message button:hover {
+  background: #c82333;
+}
+
+.no-questions {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .question-page {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .category-filter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .question-content {
+    padding: 20px;
+  }
+
+  .question-navigation {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .navigation-buttons {
+    justify-content: space-between;
+  }
+}
+  
