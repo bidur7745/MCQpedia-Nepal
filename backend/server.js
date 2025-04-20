@@ -31,6 +31,10 @@ app.get("/", (req, res) => {
   res.send("API Working");
 });
 
-// Start Server
+// // Start Server
+// const PORT = process.env.PORT || 5000;
+// app.listen(PORT, () => console.log(`Application running on http://localhost:${PORT}`));
+
+
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Application running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Application running on https://mcqpedia-nepal.onrender.com`));

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/test";
+const API_URL = "https://mcqpedia-nepal.onrender.com/api/test";
 
 // ✅ Fetch test questions
 export const getTestQuestions = async (category = "General", difficulty = "Any", numberOfQuestions = 10) => {
