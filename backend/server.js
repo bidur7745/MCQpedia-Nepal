@@ -15,7 +15,15 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"], credentials: true }));
+app.use(cors({ origin: [
+  "http://localhost:5173", 
+  "http://localhost:5174", 
+  "http://localhost:5175",
+  "https://mc-qpedia-nepal.vercel.app",
+  "https://mc-qpedia-nepal-bidur7745s-projects.vercel.app",
+  "https://mc-qpedia-nepal-git-main-bidur7745s-projects.vercel.app"
+
+], credentials: true }));
 
 // Connect to Database
 connectDB();
